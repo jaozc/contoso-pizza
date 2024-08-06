@@ -4,3 +4,36 @@ GET {{contoso_pizza_HostAddress}}/pizza/
 Accept: application/json
 
 ###
+
+POST {{ContosoPizza_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "name": "Hawaii",
+    "isGlutenFree": false
+}
+
+###
+
+PUT {{ContosoPizza_HostAddress}}/pizza/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Hawaiian",
+    "isGlutenFree": false
+}
+
+###
+
+GET {{ContosoPizza_HostAddress}}/pizza/3
+Accept: application/json
+
+###
+
+DELETE {{ContosoPizza_HostAddress}}/pizza/3
+
+###
+
+GET {{ContosoPizza_HostAddress}}/pizza/
+Accept: application/json
